@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -13,6 +14,7 @@ import { ExplorePage } from './explore.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    BrowserModule,
     ExplorePageRoutingModule
   ],
   declarations: [ExplorePage]

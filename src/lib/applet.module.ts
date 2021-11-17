@@ -31,6 +31,7 @@ import { ProfileEditPage } from './profile-edit/profile-edit.page';
 	imports: [
 		CommonModule,
 		IonicModule,
+		IonicModule.forRoot(),
 		FormsModule,
 		ReactiveFormsModule,
 		TranslateModule,
