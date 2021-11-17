@@ -1,0 +1,20 @@
+{
+	"name": "0-my-applet",
+	"version": "0.0.1",
+  "license": "UNLICENSED",
+	"peerDependencies": {
+		"@agunity/models": "file:../../../shared/models",
+		"@agunity/applet-api": "file:../../../shared/applet-api",
+		"@agunity/mocked": "file../../../shared/applet-api/mocked",
+		"@agunity/provider": "file../../../shared/applet-api/provider",
+		"@agunity/services": "file../../../shared/applet-api/services",
+		"@agunity/components": "file../../../shared/applet-api/components",
+		"@agunity/pipes": "file../../../shared/applet-api/pipes",
+		"@agunity/directives": "file../../../shared/applet-api/directives",
+		"@angular/common": "<12.0.0",
+		"@angular/core": "<12.0.0",
+		"@angular/forms": "<12.0.0",
+		"@ionic/angular": "^5.6.14",
+		"rxjs": "^7.3.0"
+	}
+}

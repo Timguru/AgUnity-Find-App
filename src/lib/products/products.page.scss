@@ -1,0 +1,73 @@
+@import "applet-base";
+@import "list-base";
+
+:host {
+	overflow: auto;
+}
+
+.product-col {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.product-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.product-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-info-value {
+	font-weight: bold;
+}
+.price {
+	margin-top: -10px;
+	font-size: 13px;
+}
+.bg {
+	background-color: #ffffff;
+}
+.btn {
+	border: 1px solid var(--ion-color-quaternary);
+	background: none;
+	padding: 10px 10px;
+	font-size: 12px;
+	font-family: "poppins";
+	font-weight: 400;
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+}
+ion-card-title {
+	font-size: 18px;
+}
+ion-card {
+	margin: 1em;
+	padding: 0.625rem;
+	color: var(--ion-color-darkest);
+}
+button.button3 {
+	display: inline-block;
+	padding: 0.9em 1.2em;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 16px;
+	color: #ffffff;
+	width: 50%;
+	background-color: var(--ion-color-quaternary);
+	text-align: center;
+	transition: all 0.2s;
+}
+.top {
+	margin-top: 1em;
+	float: right;
+}

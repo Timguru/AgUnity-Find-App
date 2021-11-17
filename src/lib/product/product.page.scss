@@ -1,0 +1,140 @@
+@import "applet-base";
+@import "list-base";
+
+:host {
+	overflow: auto;
+}
+
+.product-name,
+.product-value {
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 1em;
+}
+
+.product-value {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.product-description {
+	@include font($fs-small, normal, black);
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.product-buy {
+	--highlight-height: 0;
+	--border-color: transparent !important;
+}
+
+.product-buy ion-label {
+	margin: 0 0.625rem 0 0.625rem;
+	font-weight: bold;
+}
+
+.product-buy ion-input {
+	border-style: solid;
+}
+
+.product-buy ion-button {
+	//--background: var(--ion-color-quaternary);
+	font-size: $fs-small;
+	margin: 0 0.625rem 0 0.625rem;
+	height: 2.5rem;
+}
+
+.product-buy ion-icon {
+	font-size: 2em;
+}
+.product-section {
+	display: flex;
+}
+.rounded-input {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid var(--ion-color-quaternary);
+}
+.item {
+	width: 60%;
+	background-color: #ffffff;
+}
+.item2 {
+	margin-top: -1em;
+	background-color: #ffffff;
+}
+.item3 {
+	width: 90%;
+	background-color: #ffffff;
+}
+.input-text {
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-size: 13px;
+}
+.step {
+	font-size: 16px;
+	font-weight: bold;
+}
+.top {
+	margin-top: 2em;
+}
+.btn {
+	border: 1px solid var(--ion-color-quaternary);
+	padding: 10px 10px;
+	font-size: 14px;
+	font-family: "poppins";
+	font-weight: 400;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+}
+button.button3 {
+	display: inline-block;
+	padding: 0.9em 1.2em;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 16px;
+	color: #ffffff;
+	width: 100%;
+	background-color: var(--ion-color-quaternary);
+	text-align: center;
+	transition: all 0.2s;
+}
+.bg {
+	background-color: #ffffff;
+}
+button.button2 {
+	display: inline-block;
+	padding: 0.7em 1.2em;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 16px;
+	color: #ffffff;
+	width: 100%;
+	background-color: var(--ion-color-tertiary-shade);
+	text-align: center;
+	transition: all 0.2s;
+}
+
+.total {
+	margin-left: 1em;
+	margin-top: 2em;
+}
+.product-buy {
+	background-color: white;
+}
+ion-modal.my-modal {
+	padding: 10vh 10vw !important;
+}

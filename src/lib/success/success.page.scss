@@ -1,0 +1,22 @@
+.bg{
+    background-color:#FFFFFF;
+    height: 100vh;
+}
+.img{
+    margin-top: 5em;
+}
+button.button2{
+	display:inline-block;
+	padding:0.7em 1.2em;
+	border-radius:10px;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-weight:300;
+	font-size: 16px;
+	color:#FFFFFF;
+	width: 30%;
+    margin:2em;
+	background-color: var(--ion-color-tertiary-shade);
+	text-align:center;
+	transition: all 0.2s;
+}

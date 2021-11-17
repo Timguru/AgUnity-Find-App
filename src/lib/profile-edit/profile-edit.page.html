@@ -1,0 +1,108 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Profile Edit
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profile Edit</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-toolbar>
+    <h2>
+      Enter details about you for others to find you easily.
+    </h2>
+  </ion-toolbar>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+
+
+  </ion-list>
+
+
+<!-- Textarea in an item with a floating label -->
+<ion-item>
+  <ion-label position="floating">Description</ion-label>
+  <ion-textarea></ion-textarea>
+</ion-item>
+
+
+
+
+
+
+
+
+<ion-list>
+
+
+  <ion-item>
+    <ion-label>Products List</ion-label>
+    <ion-select multiple="true" cancelText="cancel" okText="Ok">
+      <ion-select-option value="olives">Black-night-shade</ion-select-option>
+      <ion-select-option value="xcheese">cabbages</ion-select-option>
+      <ion-select-option value="peppers">Green Peppers</ion-select-option>
+      <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
+      <ion-select-option value="onions">Onions</ion-select-option>
+      <ion-select-option value="pepperoni">Terere</ion-select-option>
+      <ion-select-option value="pineapple">Managu</ion-select-option>
+      <ion-select-option value="sausage">Sausage</ion-select-option>
+      <ion-select-option value="Spinach">Spinach</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Locations</ion-label>
+    <ion-select  value="brown"  cancelText="cancel" okText="Ok">
+      <ion-select-option value="olives">Kakamega</ion-select-option>
+      <ion-select-option value="xcheese">Bomet</ion-select-option>
+      <ion-select-option value="peppers">Nairobi</ion-select-option>
+      <ion-select-option value="mushrooms">Kisumu</ion-select-option>
+      <ion-select-option value="onions">Kilifi</ion-select-option>
+      <ion-select-option value="pepperoni">Meru</ion-select-option>
+      <ion-select-option value="pineapple">Hombay</ion-select-option>
+      <ion-select-option value="sausage">Busia</ion-select-option>
+      <ion-select-option value="Spinach">Embu</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label>Profession</ion-label>
+    <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+
+      <ion-select-option value="olives">Farmer</ion-select-option>
+      <ion-select-option value="xcheese">Buyer</ion-select-option>
+      <ion-select-option value="peppers">Rider</ion-select-option>
+      <ion-select-option value="mushrooms">Service Provider</ion-select-option>
+      </ion-select>
+  </ion-item>
+
+
+
+
+</ion-list>
+
+
+<ion-toolbar>
+    <ion-button slot="end" color="danger"><p> Save profile </p> <ion-icon name="arrow-forward-circle-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+
+
+
+  </ion-content>
+

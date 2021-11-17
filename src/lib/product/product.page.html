@@ -1,0 +1,33 @@
+<div class="content bg" id="product-root" *ngIf="assetType">
+	<div class="product-section">
+		<h1 class="product-name">
+			{{ assetType.name }}
+		</h1>
+	</div>
+	<ion-item>
+		<ion-img style="max-width: 10vw" [src]="assetType.id | itemIdToImageBase64: ItemTypes.assetTypes | async"></ion-img>
+	</ion-item>
+	<p class="input-text top"><span class="step">{{'APPLETS.' + appletName + '.LABELS.STEP1' | translate }}:
+		</span>{{'APPLETS.' + appletName + '.LABELS.SELECTQTY' | translate }}</p>
+	<ion-item class="product-buy item">
+		<ion-input inputmode="numeric" class="rounded-input" [(ngModel)]="buyQtyAsString" 		readonly
+		(click)="showQty()"></ion-input>
+	</ion-item>
+
+	<p class="input-text">
+		<span class="step">{{'APPLETS.' + appletName + '.LABELS.STEP2' | translate }}:
+		</span>{{'APPLETS.' + appletName + '.LABELS.SCANID' | translate }}
+	</p>
+	<ion-item class="product-buy item3">
+		<ion-input *ngIf="isDev" type="text" [(ngModel)]="mockedQr" placeholder="Qr Content" id="mocked-qr"></ion-input>
+		<button (click)="onDevQr()" class="button2">{{'APPLETS.' + appletName + '.LABELS.SCAN' | translate }}</button>
+	</ion-item>
+
+
+	<p class="input-text"><span class="step">{{'APPLETS.' + appletName + '.LABELS.STEP3' | translate }}:
+		</span>{{'APPLETS.' + appletName + '.LABELS.FINISH' | translate }}</p>
+	<ion-item class="product-buy item3">
+		<button class="button3"
+			(click)=" showSuccess()">{{'APPLETS.' + appletName + '.LABELS.GIVE_HARVEST' | translate }}</button>
+	</ion-item>
+</div>

@@ -1,0 +1,38 @@
+{
+	"$schema": "../../../../node_modules/ng-packagr/ng-package.schema.json",
+	"dest": "../../../../build/0-my-applet",
+	"lib": {
+		"entryFile": "src/public_api.ts",
+		"styleIncludePaths": ["../../../shared/applet-api/theme/"],
+		"umdModuleIds": {
+			"@agunity/applet-api": "@agunity/applet-api",
+			"@agunity/components": "@agunity/components",
+			"@agunity/directives": "@agunity/directives",
+			"@agunity/mocked": "@agunity/mocked",
+			"@agunity/models": "@agunity/models",
+			"@agunity/pipes": "@agunity/pipes",
+			"@agunity/provider": "@agunity/provider",
+			"@agunity/services": "@agunity/services",
+			"@angular/common": "@angular/common",
+			"@angular/core": "@angular/core",
+			"@angular/forms": "@angular/forms",
+			"@angular/router": "@angular/router",
+			"@capacitor/core": "@capacitor/core",
+			"@capacitor/filesystem": "@capacitor/filesystem",
+			"@ionic/angular": "@ionic/angular",
+			"@ngx-translate/core": "@ngx-translate/core",
+			"@techiediaries/ngx-qrcode": "@techiediaries/ngx-qrcode",
+			"chart.js": "chart.js",
+			"chartjs-adapter-moment": "chartjs-adapter-moment",
+			"dayjs": "dayjs",
+			"dayjs/plugin/relativeTime": "dayjs/plugin/relativeTime",
+			"moment": "moment",
+			"rxjs": "rxjs",
+			"rxjs/operators": "rxjs/operators",
+			"semaphore-async-await": "semaphore-async-await"
+		}
+	},
+	"assets": [
+		"src/assets/**/*"
+	]
+}

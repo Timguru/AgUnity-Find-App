@@ -1,0 +1,42 @@
+{
+	"APPLETS": {
+		"0-my-applet": {
+			"TITLE": "My Applet",
+			"HEADER": {
+				"PRODUCTS": "MY PRODUCTS",
+				"WALLET": "MY SALES"
+			},
+			"TABS" : {
+				"EXPLORE": "Explore",
+				"NOTIFICATION" : "Notifications",
+				"PROFILE" : "Profile",
+				"CONTACTS" : "Contacts"
+			},
+			"BUYNOW": "BUY NOW",
+			"LABELS": {
+				"QTY": "Quantity",
+				"REM": "Remaining",
+				"KGS": "Kg(s)",
+				"PERGK":"Per Kg",
+				"STEP1":"Step 1",
+				"STEP2":"Step 2",
+				"STEP3":"Step 3",
+				"STEP4":"Step 4",
+				"SELECTQTY":"Select the quantity to give",
+				"TOTAL":"Total Amount",
+				"SCANID":"Scan Farmer's ID Card",
+				"SCAN":"Scan ID Card",
+				"MODE":"Mode of Payment",
+				"CASH":"Cash payment",
+				"CHEQUE": "Cheque",
+				"BANK":"Bank Transfer",
+				"FINISH":"Finish",
+				"GIVE_HARVEST":"Give Harvest",
+				"CURRENCY": "Br",
+				"PRICE":"Price per Kg",
+				"QT":"Qt",
+				"PERKG":"Per Kg"
+			}
+		}
+	}
+}

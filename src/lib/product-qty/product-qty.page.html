@@ -1,0 +1,89 @@
+<ion-grid>
+	<ion-row>
+		<ion-col>
+			<span>{{ 'LABELS.QUANTITY_SHORT' | translate }}</span>
+		</ion-col>
+		<ion-col class="product-qty">
+			<span>{{ qtyAsString }}</span>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('1')">
+				<span>1</span>
+			</ion-button>
+		</ion-col>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('2')">
+				<span>2</span>
+			</ion-button>
+		</ion-col>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('3')">
+				<span>3</span>
+			</ion-button>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('4')">
+				<span>4</span>
+			</ion-button>
+		</ion-col>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('5')">
+				<span>5</span>
+			</ion-button>
+		</ion-col>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('6')">
+				<span>6</span>
+			</ion-button>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('7')">
+				<span>7</span>
+			</ion-button>
+		</ion-col>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('8')">
+				<span>8</span>
+			</ion-button>
+		</ion-col>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('9')">
+				<span>9</span>
+			</ion-button>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col>
+			<ion-button size="large" (click)="handleInput('0')">
+				<span>0</span>
+			</ion-button>
+		</ion-col>
+		<ion-col>
+		</ion-col>
+		<ion-col>
+			<ion-button id="backspace" size="large" (click)="clearInput()">
+				<ion-icon slot="icon-only" name="backspace-outline"></ion-icon>
+			</ion-button>
+		</ion-col>
+	</ion-row>
+	<ion-row></ion-row>
+	<ion-row>
+		<ion-col>
+			<ion-button size="large" (click)="dismissModal()">
+				<ion-icon slot="icon-only" name="close-circle-outline"></ion-icon>
+			</ion-button>
+		</ion-col>
+		<ion-col></ion-col>
+		<ion-col>
+			<ion-button size="large" (click)="closeModal()">
+				<ion-icon slot="icon-only" name="checkmark-circle-outline"></ion-icon>
+			</ion-button>
+		</ion-col>
+	</ion-row>
+</ion-grid>

@@ -1,0 +1,32 @@
+<applet-header title="{{ 'APPLETS.' + appletName + '.TITLE' | translate }}" iconPath="{{ 'assets/favicon.svg' | appletImagePathToBase64 | async }}">
+</applet-header>
+<ion-content [data-testid]="'applet-'+ appletName">
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="xplore" (click)="showExplore()">
+                <ion-icon name="compass"></ion-icon>
+                <ion-label>Explore</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="contacts" (click)="showContact()">
+                <ion-icon name="people"></ion-icon>
+                <ion-label>Contacts</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="map" (click)="showMap()">
+                <ion-icon name="map"></ion-icon>
+                <ion-label>Map</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="notification" (click)="showAlert()">
+                <ion-icon name="notifications"></ion-icon>
+                <ion-label>Alert</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button tab="profile" (click)="showProfile()">
+                <ion-icon name="person"></ion-icon>
+                <ion-label>Profile</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
+</ion-content>

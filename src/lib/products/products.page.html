@@ -1,0 +1,12 @@
+<ng-container>
+	<ion-row class="product-row">
+		<ion-col class="product-col" size="6" *ngFor="let assetType of assetTypes$ | async">
+			<ion-card class="bg" (click)="showAssetType(assetType)">
+				<ion-card-header>
+					<img [src]="assetType.id | itemIdToImageBase64: ItemTypes.assetTypes  | async" />
+					<ion-card-subtitle>{{assetType.name}}</ion-card-subtitle>
+				</ion-card-header>
+			</ion-card>
+		</ion-col>
+	</ion-row>
+</ng-container>
